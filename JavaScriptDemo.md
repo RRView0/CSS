@@ -1,5 +1,4 @@
-# JavaScript Topics with Examples
-
+# JavaScript
 ## 1. Introduction to JavaScript
 
 ### Subtopics:
@@ -149,19 +148,41 @@ switch (grade) {
 - Default Parameters
 
 ### Example:
+#### Function Declaration:
 ```javascript
 function greet(name) {
   return `Hello, ${name}`;
 }
 console.log(greet('Alice'));
+```
 
+#### Function Expressions:
+```javascript
+const multiply = function(a, b) {
+  return a * b;
+};
+console.log(multiply(4, 5));
+```
+
+#### Arrow Functions:
+```javascript
 const add = (a, b) => a + b;
 console.log(add(5, 10));
+```
+
+#### Default Parameters:
+```javascript
+function greetWithDefault(name = 'Guest') {
+  return `Hello, ${name}`;
+}
+console.log(greetWithDefault()); // Hello, Guest
+console.log(greetWithDefault('Alice')); // Hello, Alice
 ```
 
 **Answer:**
 - Functions encapsulate reusable logic.
 - Arrow functions (`=>`) are concise and ideal for callbacks.
+- Default parameters allow specifying fallback values.
 
 ---
 
@@ -341,6 +362,9 @@ counter();
 Advanced concepts like closures enable encapsulation, callbacks manage async flow, and higher-order functions operate on other functions.
 
 ---
+
+
+
 
 ## 15. Testing and Debugging
 
