@@ -23,6 +23,11 @@
 </html>
 ```
 
+**Answer:**
+JavaScript is a programming language commonly used to create interactive effects within web browsers. It enables dynamic content, such as user interactions and animations.
+
+---
+
 ## 2. Variables and Constants
 
 ### Subtopics:
@@ -36,6 +41,12 @@ const age = 25;
 var city = 'New York';
 console.log(`Name: ${name}, Age: ${age}, City: ${city}`);
 ```
+
+**Answer:**
+- `let` and `const` have block scope; `var` has function scope.
+- Use `const` for values that do not change, and `let` for those that do.
+
+---
 
 ## 3. Data Types
 
@@ -55,6 +66,13 @@ console.log(typeof str, typeof num, typeof isAvailable);
 console.log(person, colors);
 ```
 
+**Answer:**
+JavaScript data types are broadly categorized into:
+- Primitive (immutable) types like `string`, `number`, etc.
+- Non-Primitive (mutable) types like `object` and `array`.
+
+---
+
 ## 4. Operators
 
 ### Subtopics:
@@ -73,6 +91,13 @@ console.log(a > b); // Comparison
 console.log(a > 5 && b > 15); // Logical
 ```
 
+**Answer:**
+- Arithmetic: `+`, `-`, `*`, `/`, `%`.
+- Logical: `&&`, `||`, `!`.
+- Ternary: `condition ? value1 : value2`.
+
+---
+
 ## 5. Control Flow
 
 ### Subtopics:
@@ -81,6 +106,19 @@ console.log(a > 5 && b > 15); // Logical
 - Loops (for, while, do-while)
 
 ### Example:
+#### If-Else Example:
+```javascript
+let number = 10;
+if (number > 0) {
+  console.log('Positive number');
+} else if (number < 0) {
+  console.log('Negative number');
+} else {
+  console.log('Zero');
+}
+```
+
+#### Switch Example:
 ```javascript
 let grade = 'A';
 switch (grade) {
@@ -94,6 +132,13 @@ switch (grade) {
     console.log('Need Improvement');
 }
 ```
+
+**Answer:**
+- Use `if-else` for conditional logic.
+- Use `switch` for multiple conditions with fixed cases.
+- Loops are used to iterate over data structures.
+
+---
 
 ## 6. Functions
 
@@ -113,6 +158,12 @@ console.log(greet('Alice'));
 const add = (a, b) => a + b;
 console.log(add(5, 10));
 ```
+
+**Answer:**
+- Functions encapsulate reusable logic.
+- Arrow functions (`=>`) are concise and ideal for callbacks.
+
+---
 
 ## 7. Objects and Classes
 
@@ -137,6 +188,12 @@ const john = new Person('John', 30);
 john.greet();
 ```
 
+**Answer:**
+- Objects store key-value pairs.
+- Classes provide a blueprint for objects, supporting inheritance and encapsulation.
+
+---
+
 ## 8. Arrays
 
 ### Subtopics:
@@ -149,6 +206,11 @@ let numbers = [1, 2, 3, 4];
 let doubled = numbers.map(n => n * 2);
 console.log(doubled);
 ```
+
+**Answer:**
+Arrays are ordered collections with powerful methods for transformation and filtering.
+
+---
 
 ## 9. Events
 
@@ -166,6 +228,11 @@ document.getElementById('myButton').addEventListener('click', () => {
 </script>
 ```
 
+**Answer:**
+Events are user interactions like clicks or key presses, handled using listeners.
+
+---
+
 ## 10. DOM Manipulation
 
 ### Subtopics:
@@ -179,6 +246,11 @@ let heading = document.createElement('h1');
 heading.textContent = 'Hello, DOM!';
 document.body.appendChild(heading);
 ```
+
+**Answer:**
+DOM allows interaction with HTML elements via JavaScript for dynamic content.
+
+---
 
 ## 11. Promises and Async/Await
 
@@ -197,6 +269,11 @@ async function fetchData() {
 fetchData();
 ```
 
+**Answer:**
+Promises and `async/await` handle asynchronous operations like API calls.
+
+---
+
 ## 12. Error Handling
 
 ### Subtopics:
@@ -214,6 +291,11 @@ try {
 }
 ```
 
+**Answer:**
+Error handling ensures robust code execution with fallback mechanisms.
+
+---
+
 ## 13. Modules
 
 ### Subtopics:
@@ -228,6 +310,11 @@ export const add = (a, b) => a + b;
 import { add } from './math.js';
 console.log(add(2, 3));
 ```
+
+**Answer:**
+Modules split code into reusable files, enhancing maintainability.
+
+---
 
 ## 14. Advanced Topics
 
@@ -250,6 +337,11 @@ counter();
 counter();
 ```
 
+**Answer:**
+Advanced concepts like closures enable encapsulation, callbacks manage async flow, and higher-order functions operate on other functions.
+
+---
+
 ## 15. Testing and Debugging
 
 ### Subtopics:
@@ -259,3 +351,7 @@ counter();
 ### Example:
 ```javascript
 console.log('Debugging message');
+```
+
+**Answer:**
+Use `console.log` and browser debugging tools to troubleshoot and inspect code behavior.
